@@ -1,0 +1,26 @@
+
+✔ made html file added a text field and a submit button @done(2017-02-16 21:55)
+    just type html and press enter with atom's autocomplete
+✔ looked for a solution to timestamped notes found, Atom package @done(2017-02-16 22:08)
+✔ checked angularjs.org to remember where to put the app-js initiator in the html @done(2017-02-16 22:18)
+    can be put in the html opening tag
+✔ insirted script tag to include angular @done(2017-02-16 22:26)
+✔ is angular working? entered 2+2 in angular interpolation markup didn't work @done(2017-02-16 22:30)
+✔ had to look up what the {{}} thing is called @done(2017-02-16 22:39)
+✔ added js file and questioned where to put it in my folder and why @done(2017-02-16 22:44)
+    http://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
+    gives a good explanation/soultion but for this exersize it dosn't matter
+✔ it wasnt working because I had named the angular module but haden't set it it the js file @done(2017-02-16 23:01)
+    I also learned that if you dont name the module you can just put ng-app in the html tag and angular will run on the page
+✔ made a controller and remembered how to use mv as 'this'   @done(2017-02-19 21:50)
+✔ try to display the list and looking for the utf code for a box and remembering how to use it in html @done(2017-02-19 21:58)
+  &#9745; and &#9744;
+  maybe it would be easier if I made the check box a directive insted of show/hide spans
+✔ figured out the dumb checkbox utf characters but ng rep was not working, i didn't put the script tag for the new controller in the index :( @done(2017-02-19 22:19)
+✔ still not working so I just tried to desplay some text from in the controller that didnt work either, there was a ; in the setter chain (is that a thing?) now the dot of the list shows but not the text @done(2017-02-19 22:41)
+✔ I looked all over to see why the new text would not show but I guess it was a reaload thing because after I tied something strange that broke angular and reverted it back, the text and list item appeared  @done(2017-02-19 23:06)
+✔ made a task constructor and a add task method and hooked it up to the view and it worked right away @done(2017-02-19 23:21)
+✔ made a complete task method but forgot to call it in the html with the controller prefix so at first it didnt work @done(2017-02-19 23:39)
+✔ reading about how to create a custom directive for my checkbox @done(2017-02-19 23:56)
+✔ created a checkbox directive and finished delete feture @done(2017-02-20 00:34)
+next time I would like to get to making a factory for the tasks

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="todo">
+  <head>
+    <meta charset="utf-8">
+    <title>Groundhogs Day</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="todoApp.js"></script>
+    <script src="listController.js"></script>
+    <script src="CheckBoxDirective.js"></script>
+  </head>
+  <body ng-controller="listController as list">
+    <h1>Groundhogs List</h1>
+    <form>
+      <input type="text" name="task" ng-model="list.inputText">
+      <input type="submit" ng-click="list.addTask(list.inputText)" value="submit">
+    </form>
+    <ul>
+      <li ng-repeat="task in list.list">
+        <checkbox info="task"></checkbox>
+        {{task.text}}
+        <button type="button" ng-click="list.completeTask(task)">done</button>
+        <button type="button" ng-click="list.deleteTask(task)">delete</button>
+      </li>
+    </ul>
+
+  </body>
+</html>
