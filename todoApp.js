@@ -1,4 +1,2 @@
-(function () {
-  'use strict';
-  angular.module('todo',[])
-})();
+angular
+  .module("todoApp",[]);

@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="todo">
+<html ng-app="todoApp">
   <head>
     <meta charset="utf-8">
-    <title>Groundhogs Day</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="todoApp.js"></script>
-    <script src="listController.js"></script>
-    <script src="CheckBoxDirective.js"></script>
+    <title>Todo</title>
   </head>
-  <body ng-controller="listController as list">
-    <h1>Groundhogs List</h1>
-    <form>
-      <input type="text" name="task" ng-model="list.inputText">
-      <input type="submit" ng-click="list.addTask(list.inputText)" value="submit">
+  <body ng-controller="listCtrl as list">
+    <h1>{{list.title}}</h1>
+    <form >
+      <input type="text" ng-model="list.taskText">
+      <input type="submit" value="Submit" ng-click="list.addTask(taskText)">
     </form>
     <ul>
-      <li ng-repeat="task in list.list">
-        <checkbox info="task"></checkbox>
-        {{task.text}}
-        <button type="button" ng-click="list.completeTask(task)">done</button>
-        <button type="button" ng-click="list.deleteTask(task)">delete</button>
-      </li>
+      <li ng-repeat="task in list.taskList">{{task}}</li>
     </ul>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="todoApp.js"></script>
+    <script src="listCtrl.js"></script>
   </body>
 </html>
