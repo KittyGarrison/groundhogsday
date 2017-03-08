@@ -8,7 +8,7 @@
     <h1>{{list.title}}</h1>
     <form >
       <input type="text" ng-model="list.taskText">
-      <input type="submit" value="Submit" ng-click="list.addTask(taskText)">
+      <input type="submit" value="Submit" ng-click="list.addTask(list.taskText)">
     </form>
     <ul>
       <li ng-repeat="task in list.taskList">{{task}}</li>
@@ -18,5 +18,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="todoApp.js"></script>
     <script src="listCtrl.js"></script>
+    <script src="taskFactory.js"></script>
   </body>
 </html>

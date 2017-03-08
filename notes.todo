@@ -30,4 +30,6 @@ next time I would like to get to making a factory for the tasks
 ✔ so, I like to spell Module like mo-dual like two parts, not Module like mule :/  @done(2017-02-26 12:57)
 ✔ plus I didn't enstantiate the controller correctly, but now we got things hooked up right @done(2017-02-26 12:58)
 ✔ added input and submit that has a addTask methos with a ul that lists the tasks but the taskes are undefined hmm @done(2017-02-26 13:12)
-☐ 
+✔ ok, it helps if I tell the computer where it should look for the taskText ie. list.taskText @done(2017-02-26 13:30)
+✔ break @done(2017-02-26 13:32)
+hung up on the dependancy injection 

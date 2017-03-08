@@ -2,7 +2,7 @@ angular
   .module('todoApp')
   .controller('listCtrl', listCtrl);
 
-  function listCtrl() {
+  function listCtrl(taskFactory) {
     var vm = this;
     vm.title = 'Todo list';
     vm.taskList = [];
@@ -14,4 +14,4 @@ angular
       vm.taskText = "";
       console.log(vm.taskList);
     }
-}
+  }
