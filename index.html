@@ -7,11 +7,15 @@
   <body ng-controller="listCtrl as list">
     <h1>{{list.title}}</h1>
     <form >
-      <input type="text" ng-model="list.taskText">
-      <input type="submit" value="Submit" ng-click="list.addTask(list.taskText)">
+      <input type="text" ng-model="list.taskName">
+      <input type="submit" value="Submit" ng-click="list.addTask(list.taskName)">
     </form>
     <ul>
-      <li ng-repeat="task in list.taskList">{{task}}</li>
+      <li ng-repeat="task in list.taskList">
+        <span ng-click="task.finish()" ng-show="task.isDone">_x_</span>
+        <span ng-click="task.finish()" ng-hide="task.isDone">___</span>
+        {{task.name}}
+        <button ng-click="list.removeTask(task)">delete</button></li>
     </ul>
 
 
