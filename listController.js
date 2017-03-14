@@ -1,27 +1,19 @@
 angular
   .module('todoApp')
-  .controller('listCtrl',[listCtrl])
+  .controller('listCtrl',listCtrl)
 
-  function listCtrl(){
+  function listCtrl(taskFactory){
     var vm = this;
     vm.message = 'Todo';
     vm.list = [];
     vm.taskName = '';
     vm.addTask = addTask;
     vm.removeTask = removeTask;
-    vm.friend = {
-      name:"Lilli",
-      hairColor:"brown",
-      newColor:"new color",
-      changeHair: function(color){
-        console.log(color);
-        this.hairColor = color
-      }
-    }
+
 
 
     function addTask(name){
-      vm.list.push(name);
+      vm.list.push(taskFactory.create(name));
       vm.taskName = '';
     }
 
