@@ -12,11 +12,19 @@
     </form>
     <ul>
       <li ng-repeat="task in list.list">
-        <span ng-hide="task.isDone">___</span>
-        <span ng-show="task.isDone">_x_</span>
-        {{task.name}}
-        <button type="button" ng-click="task.complete()">Complete</button>
-        <button type="button" ng-click="list.removeTask(task)">Remove</button>
+        <form>
+          <span ng-hide="task.isDone" ng-click="task.complete()">___</span>
+          <span ng-show="task.isDone">_x_</span>
+          <span ng-hide="task.editMode">
+            {{task.name}} <button type="button" ng-click="task.edit()">Edit</button>
+          </span>
+          <span ng-show="task.editMode">
+            <input type="text" ng-model="task.name">
+            <input type="submit" ng-click="task.edit()">
+          </span>
+
+          <button type="button" ng-click="list.removeTask(task)">Remove</button>
+        </form>
       </li>
     </ul>
 

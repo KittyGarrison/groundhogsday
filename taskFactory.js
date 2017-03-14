@@ -9,8 +9,12 @@ angular
     function task(name) {
       this.name = name;
       this.idDone = false;
+      this.editMode = false;
       this.complete = function() {
         this.isDone = !this.isDone;
+      }
+      this.edit = function() {
+        this.editMode = !this.editMode;
       }
     };
 

@@ -32,4 +32,6 @@ next time I would like to get to making a factory for the tasks
 ✔ added input and submit that has a addTask methos with a ul that lists the tasks but the taskes are undefined hmm @done(2017-02-26 13:12)
 ✔ ok, it helps if I tell the computer where it should look for the taskText ie. list.taskText @done(2017-02-26 13:30)
 ✔ break @done(2017-02-26 13:32)
-hung up on the dependancy injection 
+✔ hung up on the dependancy injection @done(2017-03-13 23:57)
+
+✔ so I just tried to edit by creating a method on the controller but I tought it would make more sence to put it on the object it's self because adding a thing and removing a thing are methods of a list but the editing of a task name and changing it's doneness are methods of the list item  @done(2017-03-13 23:59)

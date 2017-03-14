@@ -10,15 +10,17 @@ angular
     vm.addTask = addTask;
     vm.removeTask = removeTask;
 
-
-
     function addTask(name){
       vm.list.push(taskFactory.create(name));
-      vm.taskName = '';
+      clear();
     }
 
     function removeTask(task) {
       var index = vm.list.indexOf(task);
       vm.list.splice(index,1);
+    }
+
+    function clear(){
+    vm.taskName = '';
     }
   }
