@@ -1,0 +1,11 @@
+<input type="text" ng-model="list.friend.newColor">
+
+<button type="button" ng-click="list.friend.changeHair(list.friend.newColor)">Change hair</button>
+
+
+
+,
+newColor:"new color",
+function changeHair(color){
+  hairColor = color
+}
